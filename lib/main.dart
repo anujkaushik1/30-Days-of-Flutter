@@ -7,19 +7,15 @@ void main() {
 }
 
 class MyCoolApp extends StatelessWidget {
- 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-   //   home: HomePage(),             //ye rout ki tarah kaam kr rha hai
+      //   home: HomePage(),             //ye rout ki tarah kaam kr rha hai
       routes: {
-        "/" : (context) =>LoginPage(),  // my default yeh page ke liye(intent launher jaisa hota hai yeh)
-          "/loginpage" : (context) => LoginPage()
-          
+        "/": (context) =>
+            LoginPage(), // my default yeh page ke liye(intent launher jaisa hota hai yeh)
+        "/loginpage": (context) => LoginPage()
       },
     );
-    
   }
 }
-
-
